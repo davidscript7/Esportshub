@@ -15,11 +15,4 @@ const Footer = () => {
                             Advanced esports analytics platform
                         </p>
                     </div>
-
-                    <div className="flex space-x-6 md:space-x-12">
-                        <div>
-                            <h4 className="text-sm font-semibold text-white mb-3">Connect</h4>
-                            <div className="flex space-x-4">
-                                <a href="#" className="text-gray-400 hover:text-gaming-accent transition-colors">
-                                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                        <path fillRule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3
+                    };
