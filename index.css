@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Orbitron:wght@400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply bg-gaming-dark text-white;
+}
+
+.font-gaming {
+    font-family: 'Orbitron', sans-serif;
+}
+
+.font-tech {
+    font-family: 'Orbitron', sans-serif;
+}
+
+/* Estilos personalizados para la aplicación */
+@layer components {
+    .gaming-text {
+        @apply font-gaming;
+    }
+
+    .card {
+        @apply bg-gaming-panel rounded-lg shadow-lg p-6;
+    }
+
+    .stat-card {
+        @apply flex flex-col p-4 rounded-lg bg-gradient-to-br from-gray-800 to-gray-900 shadow-lg transition-all hover:shadow-xl;
+    }
+
+    .btn-primary {
+        @apply bg-gaming-accent hover:bg-gaming-accent/90 text-white font-bold py-2 px-4 rounded-md transition-colors;
+    }
+
+    .chart-container {
+        @apply bg-gaming-panel rounded-lg p-4 shadow-lg;
+    }
+}
+
+/* Animaciones personalizadas */
+@keyframes pulse-slow {
+    0%, 100% {
+        opacity: 0.6;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+.animate-pulse-slow {
+    animation: pulse-slow 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
